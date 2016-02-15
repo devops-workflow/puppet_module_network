@@ -17,6 +17,9 @@ IPADDR="<%= @manage_ipaddr %>"
 <% end -%>
 <% if @netmask -%>
 NETMASK="<%= @netmask %>"
+<% else -%>
+<% if @prefix -%>
+PREFIX="<%= @prefix %>"
 <% end -%>
 <% if @broadcast -%>
 BROADCAST="<%= @broadcast %>"
